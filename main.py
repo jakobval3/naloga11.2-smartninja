@@ -11,8 +11,9 @@ player= input("who is playing? ")
 
 with open("score.json", "r") as file:
     score_list=json.loads(file.read())
-    for score_dict in score_list:
-        print(f"{score_dict.get['attempts']} attempts, by {score_dict.get['player']} on {score_dict.get['date']}, the wrong guesses were: {score_dict.get['wrong_guesses']}")
+
+for score_dict in score_list:
+    print(f"{score_dict['attempts']} attempts, by {score_dict['player']} on {score_dict['date']},wrong guesses were: {score_dict['wrong_guesses']}")
 
 
 wrong_guesses= []
