@@ -4,7 +4,7 @@ import datetime
 
 
 secret = random.randint(1, 30)
-print(secret)
+#print(secret)
 attempts = 0
 
 player = input("who is playing? ")
